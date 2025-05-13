@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+* { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    justify-self: center;    
+}
+.container {
+    padding: 20px;
+    width:  100%;
+    max-width: 390px;
+    margin: 240px auto;
+    line-height: 23px;
+}
+.rating-card {
+    background-color:hsl(213, 19%, 18%);
+    border-radius: 30px;
+    padding: 20px;
+    width: 100%;
+}
+.star-icon-container {
+    background-color: hsl(217deg 12% 63% / 15%); /* dark circular background */
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.star-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.rating-card h2 {
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.rating-card p {
+    font-size: 14px;
+    color: hsl(217deg 12% 63%);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.rating-buttons {
+    margin-bottom: 20px;
+    justify-self: center;
+    display: flex;
+    gap: 13px;
+}
+.rating-button {
+    background-color: hsl(217deg 12% 63% / 15%);
+    color: hsl(217deg 12% 63%);
+    border: none;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.rating-button:hover{
+    background-color: #fb7413;
+    font-weight: 500;
+    color: hsl(216, 12%, 8%);
+}
+.rating-button.selected{
+    background-color: #fff;
+    color: hsl(216, 12%, 8%);
+    font-weight: bold;
+}
+  
+.submit-button {
+    background-color: #fb7413;
+    color: hsl(216, 12%, 8%);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 100%;
+}
+  
+.submit-button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+}
+
+
+/* thank you card */
+.thank-you-card-container{
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+    /* color: hsl(0, 0%, 100%); */
+    padding: 20px;
+    width: 100%;
+    display: none;
+    text-align: center;
+}
+.thank-you-rating {
+    background-color: hsl(217deg 12% 63% / 15%);
+    color: hsl(25deg 97% 53% / 80%);
+    width: 58%;
+    height: 25px;
+    font-size: small;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.thank-you-illustration{
+    width: 40.5%;
+}
+.thank-you-title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+.thank-you-description{
+    color: hsl(217deg 12% 63% / 80%);
+    font-size: smaller;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* thank you card end*/
+
+
+/* media queries */
+@media (max-width: 764px) {
+    .container {
+        margin: 240px auto;
+        padding: 20px;
+    }
+    .rating-card {
+        width: 100%;
+        padding: 15px;
+    }
+    .thank-you-card-container{
+        width: 100%;
+        padding: 20px;
+    }
+    .submit-button {
+    background-color: #fb7413;
+    color: hsl(216, 12%, 8%);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+}
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
